@@ -7,3 +7,4 @@ Formato: `- YYYY-MM-DD · {herramienta} · {caso de uso}`
 ---
 
 <!-- entries below -->
+- 2026-04-21 · Gemini Notebooks / NotebookLM · workspace con IA para leer documentos propios, sincronización bidireccional, ahora gratis en cuentas Google
