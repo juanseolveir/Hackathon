@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <rect width="1200" height="900" fill="#F5F0E6"/>
+  <text x="60" y="70" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="42" fill="#141414">@juanseai — Avatar IG (1:1)</text>
+  <text x="60" y="105" font-family="'JetBrains Mono', monospace" font-size="18" fill="#6B6B6B">3 opciones / export 1080×1080 / IG los recorta circular</text>
+
+  <!-- Safe zone guide -->
+  <text x="60" y="160" font-family="'Inter', sans-serif" font-size="13" fill="#6B6B6B">Círculo verde = crop que hace IG. Mantener contenido dentro.</text>
+
+  <!-- Opt A: monograma ja --volt -->
+  <text x="90" y="200" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">A / monograma — --volt bg</text>
+  <rect x="90" y="220" width="300" height="300" fill="#CCFF00"/>
+  <circle cx="240" cy="370" r="148" fill="none" stroke="#141414" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="148" y="410" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="200" fill="#0A0A0A">ja</text>
+  <text x="90" y="545" font-family="'Inter', sans-serif" font-size="12" fill="#141414">Máxima visibilidad en grid.</text>
+  <text x="90" y="565" font-family="'Inter', sans-serif" font-size="12" fill="#141414">Riesgo: el amarillo-verde cansa en thumbnail.</text>
+
+  <!-- Opt B: stamp /juanseai -->
+  <text x="450" y="200" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">B / stamp — minimal editorial</text>
+  <rect x="450" y="220" width="300" height="300" fill="#0A0A0A"/>
+  <circle cx="600" cy="370" r="148" fill="none" stroke="#CCFF00" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="490" y="325" width="220" height="90" fill="none" stroke="#CCFF00" stroke-width="3"/>
+  <text x="505" y="380" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="30" fill="#CCFF00">/juanseai</text>
+  <text x="505" y="405" font-family="'JetBrains Mono', monospace" font-size="14" fill="#EDEAE2">est.2026</text>
+  <text x="450" y="545" font-family="'Inter', sans-serif" font-size="12" fill="#141414">Se lee en 88px de IG.</text>
+  <text x="450" y="565" font-family="'Inter', sans-serif" font-size="12" fill="#141414">Más "autor / editorial".</text>
+
+  <!-- Opt C: foto + borde volt (recomendado por el branding doc) -->
+  <text x="810" y="200" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">C / foto real + halo --volt (RECOMENDADO)</text>
+  <rect x="810" y="220" width="300" height="300" fill="#0A0A0A"/>
+  <circle cx="960" cy="370" r="150" fill="none" stroke="#CCFF00" stroke-width="6"/>
+  <circle cx="960" cy="370" r="140" fill="#141414"/>
+  <!-- silueta placeholder -->
+  <circle cx="960" cy="320" r="45" fill="#6B6B6B"/>
+  <path d="M 880 470 Q 960 380 1040 470 L 1040 510 L 880 510 Z" fill="#6B6B6B"/>
+  <text x="870" y="560" font-family="'Inter', sans-serif" font-size="11" fill="#141414">[placeholder — sustituir por tu foto real]</text>
+  <text x="810" y="580" font-family="'Inter', sans-serif" font-size="12" fill="#141414">Humaniza la cuenta.</text>
+  <text x="810" y="600" font-family="'Inter', sans-serif" font-size="12" fill="#141414">Subí foto pecho-arriba, fondo oscuro,</text>
+  <text x="810" y="615" font-family="'Inter', sans-serif" font-size="12" fill="#141414">luz cenital, desaturada -20%.</text>
+
+  <!-- Recomendación -->
+  <rect x="90" y="680" width="1020" height="160" fill="#0A0A0A"/>
+  <text x="120" y="725" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="28" fill="#CCFF00">Recomendación</text>
+  <text x="120" y="760" font-family="'Inter', sans-serif" font-size="16" fill="#EDEAE2">Opción C (foto real con halo --volt) alinea con el posicionamiento "soy yo, no una marca".</text>
+  <text x="120" y="785" font-family="'Inter', sans-serif" font-size="16" fill="#EDEAE2">Usá B (stamp) si preferís no mostrar la cara. Usá A solo si querés alto contraste en grid.</text>
+  <text x="120" y="820" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">→ exportar 1080×1080 PNG desde Claude Design / Canva para subir a IG</text>
+</svg>

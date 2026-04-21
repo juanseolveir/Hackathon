@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Act — Carrusel @juanseai</title>
+  <link rel="stylesheet" href="colors_and_type.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #f0eee9; font-family: 'General Sans', 'Manrope', system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    em { font-style: italic; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="Primitives.jsx"></script>
+<script type="text/babel" src="Slides.jsx"></script>
+
+<script type="text/babel">
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="carrusel" title="AI Act — 9 slides · @juanseai" subtitle="1080×1350 · IG portrait · desliza las tarjetas o abrí una para focus">
+        <DCArtboard id="s1" label="01 · Portada" width={1080} height={1350}><Slide01 /></DCArtboard>
+        <DCArtboard id="s2" label="02 · Hecho clave" width={1080} height={1350}><Slide02 /></DCArtboard>
+        <DCArtboard id="s3" label="03 · Ya rige hoy" width={1080} height={1350}><Slide03 /></DCArtboard>
+        <DCArtboard id="s4" label="04 · 2025 · modelos base" width={1080} height={1350}><Slide04 /></DCArtboard>
+        <DCArtboard id="s5" label="05 · 2026 · el grueso" width={1080} height={1350}><Slide05 /></DCArtboard>
+        <DCArtboard id="s6" label="06 · 2027" width={1080} height={1350}><Slide06 /></DCArtboard>
+        <DCArtboard id="s7" label="07 · Transparencia" width={1080} height={1350}><Slide07 /></DCArtboard>
+        <DCArtboard id="s8" label="08 · Fuera de Europa" width={1080} height={1350}><Slide08 /></DCArtboard>
+        <DCArtboard id="s9" label="09 · Cierre + CTA" width={1080} height={1350}><Slide09 /></DCArtboard>
+        <DCPostIt top={-40} left={120} rotate={-3} width={220}>
+          Pan con dos dedos · zoom con pinch · click en una tarjeta = focus mode (←/→/Esc)
+        </DCPostIt>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

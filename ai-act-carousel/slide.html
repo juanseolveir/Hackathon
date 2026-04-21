@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Act — single slide</title>
+  <link rel="stylesheet" href="colors_and_type.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html, body { margin: 0; padding: 0; background: #ffffff; font-family: 'General Sans', 'Manrope', system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    em { font-style: italic; }
+    #root { width: 1080px; height: 1350px; }
+    #root > div { box-shadow: none !important; border-radius: 0 !important; }
+    body { width: 1080px; height: 1350px; overflow: hidden; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="Primitives.jsx"></script>
+<script type="text/babel" src="Slides.jsx"></script>
+
+<script type="text/babel">
+(async () => {
+  // Wait for babel-transformed scripts to define components
+  while (typeof Slide01 === 'undefined') { await new Promise(r => setTimeout(r, 30)); }
+
+  const slides = [null, Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08, Slide09];
+  const params = new URLSearchParams(location.search);
+  const n = parseInt(params.get('slide') || '1', 10);
+  const Slide = slides[n] || Slide01;
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<Slide />);
+
+  try { if (document.fonts && document.fonts.ready) await document.fonts.ready; } catch (e) {}
+  // Small extra delay for layout/paint after fonts settle
+  setTimeout(() => { window.__ready = true; document.title = 'READY'; }, 400);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+/* ============================================================
+   JUANSEAI — Colors & Type
+   Cool, friendly, confident. One sans family, deep blue accent.
+   ============================================================ */
+
+/* ---------- FONTS ----------
+   Display + body: Manrope (Google Fonts) — rounded geometric sans
+   Mono: JetBrains Mono — for code samples / prompts
+
+   If you prefer to bundle, drop .woff2 files into /fonts and
+   swap the @import for @font-face declarations.
+*/
+/* General Sans — Indian Type Foundry (brand font) */
+@font-face { font-family: 'General Sans'; font-weight: 200; font-style: normal; src: url('fonts/GeneralSans-Extralight.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 200; font-style: italic; src: url('fonts/GeneralSans-ExtralightItalic.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 300; font-style: normal; src: url('fonts/GeneralSans-Light.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 300; font-style: italic; src: url('fonts/GeneralSans-LightItalic.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 400; font-style: normal; src: url('fonts/GeneralSans-Regular.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 400; font-style: italic; src: url('fonts/GeneralSans-Italic.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 500; font-style: normal; src: url('fonts/GeneralSans-Medium.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 500; font-style: italic; src: url('fonts/GeneralSans-MediumItalic.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 600; font-style: normal; src: url('fonts/GeneralSans-Semibold.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 600; font-style: italic; src: url('fonts/GeneralSans-SemiboldItalic.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 700; font-style: normal; src: url('fonts/GeneralSans-Bold.otf') format('opentype'); font-display: swap; }
+@font-face { font-family: 'General Sans'; font-weight: 700; font-style: italic; src: url('fonts/GeneralSans-BoldItalic.otf') format('opentype'); font-display: swap; }
+
+/* Mono — kept from Google Fonts since no custom mono was uploaded */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ---------- BRAND CORE ---------- */
+  --brand-primary: #1E40AF;       /* deep blue — signature accent */
+  --brand-primary-hover: #1E3A8A; /* -8% luminance */
+  --brand-primary-press: #172E6F;
+
+  --brand-ink: #0B1324;           /* near-black, slight blue undertone */
+  --brand-paper: #F6F8FC;         /* cool off-white background */
+
+  /* ---------- BLUE SCALE (primary family) ---------- */
+  --blue-50:  #EEF3FC;
+  --blue-100: #D9E4F8;
+  --blue-200: #B3C8F0;
+  --blue-300: #7FA3E4;
+  --blue-400: #4B7ED6;
+  --blue-500: #2E60C7;  /* mid */
+  --blue-600: #1E40AF;  /* = primary */
+  --blue-700: #1E3A8A;
+  --blue-800: #1A2F6B;
+  --blue-900: #0F1F4A;
+
+  /* ---------- SIGNAL (secondary — distinctive electric accent) ---------- */
+  /* Electric chartreuse — a single, unmistakable pop against the deep
+     blue system. Inspired by high-end editorial / tech brands that use
+     one "signal" color as a pure recognition anchor. Use sparingly:
+     one highlight, one tag, one glyph per composition. */
+  --signal-100: #F4FFB8;
+  --signal-300: #E6FA6A;
+  --signal-500: #CFEA1A;
+  --signal-700: #7A8A08;
+
+  /* ---------- SLATE / NEUTRALS ---------- */
+  --slate-50:  #F6F8FC;
+  --slate-100: #ECEFF5;
+  --slate-200: #DDE3EC;
+  --slate-300: #C3CBD9;
+  --slate-400: #8E99AE;
+  --slate-500: #64708A;
+  --slate-600: #475067;
+  --slate-700: #2F3749;
+  --slate-800: #1B2133;
+  --slate-900: #0B1324;
+
+  /* ---------- SEMANTIC FG / BG ---------- */
+  --fg-1: var(--slate-900);   /* headings, primary text */
+  --fg-2: var(--slate-700);   /* body */
+  --fg-3: var(--slate-500);   /* secondary / captions */
+  --fg-4: var(--slate-400);   /* muted / hints */
+  --fg-on-brand: #FFFFFF;     /* on deep blue */
+  --fg-accent: var(--brand-primary);
+
+  --bg-1: #FFFFFF;            /* cards, surfaces */
+  --bg-2: var(--slate-50);    /* page bg */
+  --bg-3: var(--slate-100);   /* subtle fills */
+  --bg-brand: var(--brand-primary);
+  --bg-brand-soft: var(--blue-50);
+  --bg-ink: var(--slate-900);
+
+  --border-1: var(--slate-200);
+  --border-2: var(--slate-300);
+  --border-strong: var(--slate-900);
+
+  /* ---------- SEMANTIC STATUS ---------- */
+  --success: #1F8A5B;
+  --success-soft: #DCF2E5;
+  --warning: #C98A1A;
+  --warning-soft: #FBEBD0;
+  --danger:  #C8372D;
+  --danger-soft:  #FBE0DD;
+  --info: var(--brand-primary);
+  --info-soft: var(--blue-50);
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --font-sans: 'General Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Scale — friendly editorial, slightly tight */
+  --fs-display: clamp(3rem, 6vw, 5rem);  /* 48–80 */
+  --fs-h1: clamp(2.25rem, 4vw, 3.25rem); /* 36–52 */
+  --fs-h2: 2rem;        /* 32 */
+  --fs-h3: 1.5rem;      /* 24 */
+  --fs-h4: 1.25rem;     /* 20 */
+  --fs-body-lg: 1.125rem; /* 18 */
+  --fs-body: 1rem;        /* 16 */
+  --fs-small: 0.875rem;   /* 14 */
+  --fs-micro: 0.75rem;    /* 12 */
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.65;
+
+  --tracking-tight: -0.02em;
+  --tracking-snug: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-caps: 0.08em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* ---------- SPACING (4-pt) ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ---------- RADII — friendly/rounded ---------- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 999px;
+
+  /* ---------- SHADOWS — soft, cool-tinted ---------- */
+  --shadow-xs: 0 1px 2px rgba(15, 31, 74, 0.05);
+  --shadow-sm: 0 2px 6px rgba(15, 31, 74, 0.06), 0 1px 2px rgba(15, 31, 74, 0.04);
+  --shadow-md: 0 8px 20px rgba(15, 31, 74, 0.08), 0 2px 4px rgba(15, 31, 74, 0.05);
+  --shadow-lg: 0 20px 40px rgba(15, 31, 74, 0.10), 0 6px 12px rgba(15, 31, 74, 0.06);
+  --shadow-brand: 0 10px 30px rgba(30, 64, 175, 0.25);
+
+  /* ---------- MOTION ---------- */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.3, 1.4, 0.5, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 360ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPE CLASSES
+   Use these (not raw tokens) wherever possible.
+   ============================================================ */
+.t-display {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+.t-h1 {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+.t-h2 {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-snug);
+  color: var(--fg-1);
+}
+.t-h3 {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-semibold);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-snug);
+  color: var(--fg-1);
+}
+.t-h4 {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-semibold);
+  font-size: var(--fs-h4);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+}
+.t-body-lg {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-regular);
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+.t-body {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-regular);
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+.t-small {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: var(--fs-small);
+  line-height: var(--lh-normal);
+  color: var(--fg-3);
+}
+.t-micro {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-semibold);
+  font-size: var(--fs-micro);
+  line-height: 1.3;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+.t-mono {
+  font-family: var(--font-mono);
+  font-weight: var(--weight-medium);
+  font-size: 0.925em;
+  color: var(--fg-2);
+}
+
+/* Base reset-ish */
+html, body {
+  background: var(--bg-2);
+  color: var(--fg-1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

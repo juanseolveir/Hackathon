@@ -1,0 +1,13 @@
+# Otros clientes / no subir
+debitia-*
+generar_propuesta_stra.py
+
+# SO / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Temporales
+*.log
+/tmp-*

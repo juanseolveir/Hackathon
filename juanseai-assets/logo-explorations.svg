@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="1200" height="1400">
+  <rect width="1200" height="1400" fill="#F5F0E6"/>
+  <text x="60" y="70" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="42" fill="#141414">@juanseai — Logo explorations</text>
+  <text x="60" y="105" font-family="'JetBrains Mono', monospace" font-size="18" fill="#6B6B6B">5 variantes / elegí 1 o combiná / v1.0</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="135" x2="1140" y2="135" stroke="#141414" stroke-width="1"/>
+
+  <!-- V1: TERMINAL WORDMARK (primary, recommended) -->
+  <text x="60" y="180" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">01 / TERMINAL WORDMARK — principal, feeling newsletter / dev-indie</text>
+  <rect x="60" y="200" width="1080" height="200" fill="#0A0A0A"/>
+  <text x="100" y="325" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="96" fill="#EDEAE2">@juanse</text>
+  <text x="676" y="325" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="96" fill="#CCFF00">ai</text>
+  <text x="100" y="370" font-family="'JetBrains Mono', monospace" font-size="20" fill="#6B6B6B">▌ hablo de ia como si estuvieras en la sobremesa</text>
+
+  <!-- V2: DOT ACCENT WORDMARK -->
+  <text x="60" y="450" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">02 / DOT ACCENT — juanse.ai con punto --volt, más marca-producto</text>
+  <rect x="60" y="470" width="1080" height="200" fill="#F5F0E6" stroke="#141414" stroke-width="1"/>
+  <text x="100" y="600" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="120" fill="#141414">juanse</text>
+  <circle cx="545" cy="610" r="18" fill="#CCFF00" stroke="#141414" stroke-width="2"/>
+  <text x="580" y="600" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="120" fill="#141414">ai</text>
+  <text x="100" y="640" font-family="'JetBrains Mono', monospace" font-size="18" fill="#6B6B6B">/ divulgación · noticias · opiniones</text>
+
+  <!-- V3: STAMP / BADGE (para esquinas de piezas) -->
+  <text x="60" y="720" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">03 / STAMP — para esquinas de posts / stories / covers</text>
+  <rect x="60" y="740" width="520" height="200" fill="#0A0A0A"/>
+  <!-- stamp a la izquierda -->
+  <rect x="100" y="800" width="180" height="80" fill="none" stroke="#CCFF00" stroke-width="2"/>
+  <text x="115" y="835" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="20" fill="#CCFF00">/juanseai</text>
+  <text x="115" y="865" font-family="'JetBrains Mono', monospace" font-size="13" fill="#EDEAE2">est.2026</text>
+  <text x="320" y="825" font-family="'Inter', sans-serif" font-size="14" fill="#EDEAE2">Usado en:</text>
+  <text x="320" y="850" font-family="'Inter', sans-serif" font-size="14" fill="#EDEAE2">· Esquina inf-izq de reels</text>
+  <text x="320" y="870" font-family="'Inter', sans-serif" font-size="14" fill="#EDEAE2">· Covers de carruseles</text>
+  <text x="320" y="890" font-family="'Inter', sans-serif" font-size="14" fill="#EDEAE2">· Stories como watermark</text>
+
+  <!-- V4: MONOGRAM (por si querés un icon-mark) -->
+  <rect x="620" y="740" width="520" height="200" fill="#F5F0E6" stroke="#141414" stroke-width="1"/>
+  <text x="620" y="720" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">04 / MONOGRAM — avatar alternativo (si preferís icon-mark antes que foto)</text>
+  <!-- Ja monogram en negro sobre volt -->
+  <rect x="660" y="770" width="140" height="140" fill="#CCFF00"/>
+  <text x="685" y="880" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="110" fill="#0A0A0A">ja</text>
+  <!-- dark version -->
+  <rect x="820" y="770" width="140" height="140" fill="#0A0A0A"/>
+  <text x="845" y="880" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="110" fill="#CCFF00">ja</text>
+  <text x="980" y="800" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Versiones:</text>
+  <text x="980" y="825" font-family="'Inter', sans-serif" font-size="13" fill="#141414">--volt bg + --ink</text>
+  <text x="980" y="850" font-family="'Inter', sans-serif" font-size="13" fill="#141414">--ink bg + --volt</text>
+  <text x="980" y="895" font-family="'Inter', sans-serif" font-size="11" fill="#6B6B6B">Nota: el branding</text>
+  <text x="980" y="910" font-family="'Inter', sans-serif" font-size="11" fill="#6B6B6B">recomienda foto real</text>
+
+  <!-- V5: SIGNATURE / SEAL (más editorial-author) -->
+  <text x="60" y="990" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">05 / SIGNATURE SEAL — para piezas tipo editorial / newsletter</text>
+  <rect x="60" y="1010" width="1080" height="220" fill="#F5F0E6" stroke="#141414" stroke-width="1"/>
+  <!-- círculo sello -->
+  <circle cx="170" cy="1120" r="70" fill="none" stroke="#141414" stroke-width="2"/>
+  <text x="135" y="1110" font-family="'JetBrains Mono', monospace" font-size="12" fill="#141414">by</text>
+  <text x="128" y="1135" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="22" fill="#141414">JUANSE</text>
+  <text x="140" y="1155" font-family="'JetBrains Mono', monospace" font-size="11" fill="#6B6B6B">2026</text>
+  <!-- texto lockup -->
+  <text x="280" y="1095" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="56" fill="#141414">Juanse</text>
+  <text x="280" y="1150" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="34" fill="#141414">sobre IA, sin filtro.</text>
+  <text x="280" y="1195" font-family="'JetBrains Mono', monospace" font-size="18" fill="#6B6B6B">@juanseai · byleonardi.com</text>
+
+  <!-- Footer -->
+  <text x="60" y="1310" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="22" fill="#141414">Recomendación</text>
+  <text x="60" y="1340" font-family="'Inter', sans-serif" font-size="16" fill="#141414">· Logo principal: 01 (TERMINAL WORDMARK) para header de perfil, covers.</text>
+  <text x="60" y="1362" font-family="'Inter', sans-serif" font-size="16" fill="#141414">· Watermark en piezas: 03 (STAMP).</text>
+  <text x="60" y="1384" font-family="'Inter', sans-serif" font-size="16" fill="#141414">· 02 y 05 para piezas especiales (launches, newsletters, pitch).</text>
+</svg>

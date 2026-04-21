@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <rect width="1200" height="700" fill="#F5F0E6"/>
+  <text x="60" y="70" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="42" fill="#141414">@juanseai — Palette</text>
+  <text x="60" y="105" font-family="'JetBrains Mono', monospace" font-weight="500" font-size="18" fill="#6B6B6B">brand tokens / v1.0</text>
+
+  <!-- INK -->
+  <rect x="60" y="150" width="260" height="180" fill="#0A0A0A"/>
+  <text x="80" y="190" font-family="'JetBrains Mono', monospace" font-size="16" fill="#EDEAE2">--ink</text>
+  <text x="80" y="310" font-family="'JetBrains Mono', monospace" font-size="18" fill="#EDEAE2">#0A0A0A</text>
+  <text x="60" y="355" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Background primario</text>
+
+  <!-- PAPER -->
+  <rect x="340" y="150" width="260" height="180" fill="#F5F0E6" stroke="#141414" stroke-width="1"/>
+  <text x="360" y="190" font-family="'JetBrains Mono', monospace" font-size="16" fill="#141414">--paper</text>
+  <text x="360" y="310" font-family="'JetBrains Mono', monospace" font-size="18" fill="#141414">#F5F0E6</text>
+  <text x="340" y="355" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Background claro / editorial</text>
+
+  <!-- VOLT -->
+  <rect x="620" y="150" width="260" height="180" fill="#CCFF00"/>
+  <text x="640" y="190" font-family="'JetBrains Mono', monospace" font-size="16" fill="#141414">--volt</text>
+  <text x="640" y="310" font-family="'JetBrains Mono', monospace" font-size="18" fill="#141414">#CCFF00</text>
+  <text x="620" y="355" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Accent — highlights / CTA</text>
+
+  <!-- CORAL -->
+  <rect x="900" y="150" width="240" height="180" fill="#FF5A3C"/>
+  <text x="920" y="190" font-family="'JetBrains Mono', monospace" font-size="16" fill="#0A0A0A">--coral</text>
+  <text x="920" y="310" font-family="'JetBrains Mono', monospace" font-size="18" fill="#0A0A0A">#FF5A3C</text>
+  <text x="900" y="355" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Solo hot takes</text>
+
+  <!-- BONE -->
+  <rect x="60" y="410" width="260" height="140" fill="#EDEAE2" stroke="#141414" stroke-width="1"/>
+  <text x="80" y="450" font-family="'JetBrains Mono', monospace" font-size="16" fill="#141414">--bone</text>
+  <text x="80" y="530" font-family="'JetBrains Mono', monospace" font-size="18" fill="#141414">#EDEAE2</text>
+  <text x="60" y="575" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Texto sobre --ink</text>
+
+  <!-- CHARCOAL -->
+  <rect x="340" y="410" width="260" height="140" fill="#141414"/>
+  <text x="360" y="450" font-family="'JetBrains Mono', monospace" font-size="16" fill="#EDEAE2">--charcoal</text>
+  <text x="360" y="530" font-family="'JetBrains Mono', monospace" font-size="18" fill="#EDEAE2">#141414</text>
+  <text x="340" y="575" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Texto sobre --paper</text>
+
+  <!-- SMOKE -->
+  <rect x="620" y="410" width="260" height="140" fill="#6B6B6B"/>
+  <text x="640" y="450" font-family="'JetBrains Mono', monospace" font-size="16" fill="#EDEAE2">--smoke</text>
+  <text x="640" y="530" font-family="'JetBrains Mono', monospace" font-size="18" fill="#EDEAE2">#6B6B6B</text>
+  <text x="620" y="575" font-family="'Inter', sans-serif" font-size="14" fill="#141414">Metadata / captions secundarios</text>
+
+  <!-- Rules callout -->
+  <rect x="900" y="410" width="240" height="140" fill="#0A0A0A"/>
+  <text x="920" y="445" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="22" fill="#CCFF00">REGLAS</text>
+  <text x="920" y="475" font-family="'Inter', sans-serif" font-size="12" fill="#EDEAE2">· Max 3 colores por pieza</text>
+  <text x="920" y="495" font-family="'Inter', sans-serif" font-size="12" fill="#EDEAE2">· --volt ≤ 10% del área</text>
+  <text x="920" y="515" font-family="'Inter', sans-serif" font-size="12" fill="#EDEAE2">· --coral solo en hot takes</text>
+  <text x="920" y="535" font-family="'Inter', sans-serif" font-size="12" fill="#EDEAE2">· Nunca --volt + --coral juntos</text>
+
+  <!-- Footer -->
+  <text x="60" y="650" font-family="'JetBrains Mono', monospace" font-size="14" fill="#6B6B6B">@juanseai / brand.palette / 2026-04-20</text>
+</svg>
