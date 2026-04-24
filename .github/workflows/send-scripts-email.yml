@@ -40,7 +40,11 @@ jobs:
           echo "file=$FILE" >> "$GITHUB_OUTPUT"
           echo "date=$DATE" >> "$GITHUB_OUTPUT"
 
-      - name: Send email via Resend
+      - name: Install markdown
+        if: steps.resolve.outputs.file != ''
+        run: pip install --quiet markdown==3.7
+
+      - name: Render and send email via Resend
         if: steps.resolve.outputs.file != ''
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -48,18 +52,78 @@ jobs:
           DATE: ${{ steps.resolve.outputs.date }}
         run: |
           python3 <<'PY'
-          import os, json, urllib.request, urllib.error, sys
+          import os, json, urllib.request, urllib.error, sys, re
+          import markdown as md
+
           file_path = os.environ["FILE"]
           date = os.environ["DATE"]
           api_key = os.environ["RESEND_API_KEY"]
+
           with open(file_path, encoding="utf-8") as f:
-              body = f.read()
-          body += "\n\n— Generado automáticamente (GitHub Actions + Resend). Editá los guiones antes de grabar."
+              raw = f.read()
+
+          # Plain text version (strip markdown syntax lightly)
+          text_body = raw + "\n\n— Generado automáticamente. Editá antes de grabar."
+
+          # HTML version
+          html_body = md.markdown(raw, extensions=["extra", "sane_lists", "nl2br"])
+
+          template = f"""<!DOCTYPE html>
+          <html lang="es">
+          <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1">
+          <title>[juanseai] 3 guiones · {date}</title>
+          </head>
+          <body style="margin:0;padding:0;background:#f5f4f1;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Helvetica,Arial,sans-serif;color:#1a1a1a;line-height:1.55;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f4f1;padding:32px 16px;">
+              <tr><td align="center">
+                <table role="presentation" width="620" cellpadding="0" cellspacing="0" style="max-width:620px;background:#ffffff;border-radius:12px;border:1px solid #e6e4df;overflow:hidden;">
+                  <tr><td style="padding:24px 32px;background:#111111;color:#ffffff;">
+                    <div style="font-size:12px;letter-spacing:2px;color:#a1a1a1;text-transform:uppercase;font-weight:600;">@juanseai · content engine</div>
+                    <div style="font-size:22px;font-weight:700;margin-top:6px;">3 guiones del día</div>
+                    <div style="font-size:13px;color:#c7c7c7;margin-top:2px;">{date}</div>
+                  </td></tr>
+                  <tr><td style="padding:28px 32px;font-size:15px;">
+                    <div class="content">
+                      {html_body}
+                    </div>
+                  </td></tr>
+                  <tr><td style="padding:18px 32px 26px;border-top:1px solid #eceae5;background:#fafaf7;font-size:12px;color:#7a7a7a;">
+                    Generado automáticamente · Editá los guiones antes de grabar · Repo: juanseolveir/Hackathon
+                  </td></tr>
+                </table>
+              </td></tr>
+            </table>
+          </body>
+          </html>"""
+
+          # Inline polish: tighten markdown defaults and add spacing for headings/lists
+          inline_styles = {
+              "<h1>": '<h1 style="font-size:22px;font-weight:700;margin:28px 0 12px;color:#111;border-bottom:2px solid #111;padding-bottom:6px;">',
+              "<h2>": '<h2 style="font-size:18px;font-weight:700;margin:26px 0 10px;color:#111;">',
+              "<h3>": '<h3 style="font-size:16px;font-weight:700;margin:22px 0 8px;color:#1a1a1a;">',
+              "<h4>": '<h4 style="font-size:14px;font-weight:700;margin:16px 0 6px;color:#1a1a1a;text-transform:uppercase;letter-spacing:0.5px;">',
+              "<p>": '<p style="margin:8px 0 12px;color:#262626;">',
+              "<ul>": '<ul style="margin:8px 0 14px;padding-left:22px;color:#262626;">',
+              "<ol>": '<ol style="margin:8px 0 14px;padding-left:22px;color:#262626;">',
+              "<li>": '<li style="margin:4px 0;">',
+              "<hr />": '<hr style="border:none;border-top:1px solid #e6e4df;margin:24px 0;">',
+              "<hr>": '<hr style="border:none;border-top:1px solid #e6e4df;margin:24px 0;">',
+              "<strong>": '<strong style="color:#111;font-weight:700;">',
+              "<code>": '<code style="background:#f1f0ec;padding:2px 6px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:#111;">',
+              "<blockquote>": '<blockquote style="margin:12px 0;padding:10px 16px;background:#faf9f6;border-left:3px solid #111;color:#3a3a3a;font-style:italic;">',
+          }
+          html_final = template
+          for k, v in inline_styles.items():
+              html_final = html_final.replace(k, v)
+
           payload = {
               "from": "juanseai <juan@byleonardi.com>",
               "to": ["jolveira@udesa.edu.ar"],
               "subject": f"[juanseai] 3 guiones del día · {date}",
-              "text": body,
+              "text": text_body,
+              "html": html_final,
           }
           req = urllib.request.Request(
               "https://api.resend.com/emails",
@@ -67,7 +131,7 @@ jobs:
               headers={
                   "Authorization": f"Bearer {api_key}",
                   "Content-Type": "application/json",
-                  "User-Agent": "juanseai-reels-scripts/1.0 (+github-actions)",
+                  "User-Agent": "juanseai-reels-scripts/1.1 (+github-actions)",
                   "Accept": "application/json",
               },
               method="POST",
