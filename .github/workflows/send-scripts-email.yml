@@ -67,6 +67,8 @@ jobs:
               headers={
                   "Authorization": f"Bearer {api_key}",
                   "Content-Type": "application/json",
+                  "User-Agent": "juanseai-reels-scripts/1.0 (+github-actions)",
+                  "Accept": "application/json",
               },
               method="POST",
           )
