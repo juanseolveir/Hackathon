@@ -1,0 +1,83 @@
+{
+  "18072724217260114": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "excluido del análisis: solo 3 días entre posted_at (2026-04-23) y date_pulled (2026-04-26)"
+  },
+  "18089812586591870": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-19; caption null; métricas null (insights=off en snapshot útil)"
+  },
+  "17938908726034498": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-17 (scripts disponibles desde 2026-04-24); posteado manualmente"
+  },
+  "17965477236060472": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-16 (scripts disponibles desde 2026-04-24); posteado manualmente"
+  },
+  "17985190505808369": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-13; caption null; posteado manualmente"
+  },
+  "17883110853531878": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-11; caption null; posteado manualmente"
+  },
+  "18073708526233074": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-08; caption null; posteado manualmente"
+  },
+  "17942410146183728": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-07; caption null; posteado manualmente"
+  },
+  "18101444344752831": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "no hay scripts en ventana ±2 días de 2026-04-06; caption null; posteado manualmente"
+  }
+}
