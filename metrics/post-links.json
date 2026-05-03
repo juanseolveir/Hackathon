@@ -5,8 +5,8 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null,
-    "note": "excluido del análisis: solo 3 días entre posted_at (2026-04-23) y date_pulled (2026-04-26)"
+    "caption_similarity": 0.556,
+    "note": "caption hashtag-casi-puro (10 tokens, mayoría stop words); publicado 2026-04-23, un día antes de que comenzaran los scripts; mejor ratio (0.556 vs projectdeal) es stop-word driven — 'de', 'la', 'lo', 'mas', 'ia' — sin overlap de contenido real; tratado como unlinked"
   },
   "18089812586591870": {
     "script_date": null,
@@ -15,7 +15,7 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "no hay scripts en ventana ±2 días de 2026-04-19; caption null; métricas null (insights=off en snapshot útil)"
+    "note": "caption null; no hay scripts en ventana ±2 días de 2026-04-19 (scripts disponibles desde 2026-04-24); posteado manualmente"
   },
   "17938908726034498": {
     "script_date": null,
@@ -42,7 +42,7 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "no hay scripts en ventana ±2 días de 2026-04-13; caption null; posteado manualmente"
+    "note": "caption null; no hay scripts en ventana ±2 días de 2026-04-13; posteado manualmente"
   },
   "17883110853531878": {
     "script_date": null,
@@ -51,7 +51,7 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "no hay scripts en ventana ±2 días de 2026-04-11; caption null; posteado manualmente"
+    "note": "caption null; no hay scripts en ventana ±2 días de 2026-04-11; posteado manualmente"
   },
   "18073708526233074": {
     "script_date": null,
@@ -60,7 +60,7 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "no hay scripts en ventana ±2 días de 2026-04-08; caption null; posteado manualmente"
+    "note": "caption null; no hay scripts en ventana ±2 días de 2026-04-08; posteado manualmente"
   },
   "17942410146183728": {
     "script_date": null,
@@ -69,7 +69,7 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "no hay scripts en ventana ±2 días de 2026-04-07; caption null; posteado manualmente"
+    "note": "caption null; no hay scripts en ventana ±2 días de 2026-04-07; posteado manualmente"
   },
   "18101444344752831": {
     "script_date": null,
@@ -78,6 +78,24 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "no hay scripts en ventana ±2 días de 2026-04-06; caption null; posteado manualmente"
+    "note": "caption null; no hay scripts en ventana ±2 días de 2026-04-06; posteado manualmente"
+  },
+  "18079875242564156": {
+    "script_date": "2026-04-25",
+    "guion_n": 1,
+    "pilar": "Demo",
+    "formula": "Contrarian",
+    "driver": "Identidad + Awe",
+    "caption_similarity": 0.96,
+    "note": "match fuerte: caption del post casi idéntico al script (archivo 2026-04-25-projectdeal-scripts.md); diferencias mínimas: 'transaccionaron' vs 'transaron', typo 'Peron' vs 'Quedaron'; 52 de 54 tokens únicos del post presentes en el script"
+  },
+  "18069816377667327": {
+    "script_date": null,
+    "guion_n": null,
+    "pilar": "unlinked",
+    "formula": "unlinked",
+    "driver": "unlinked",
+    "caption_similarity": null,
+    "note": "excluido del análisis: 5 días entre posted_at (2026-04-28) y date_pulled (2026-05-03) — aún no estabilizó métricas; caption null"
   }
 }
