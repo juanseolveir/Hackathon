@@ -96,6 +96,6 @@
     "formula": "unlinked",
     "driver": "unlinked",
     "caption_similarity": null,
-    "note": "excluido del análisis: 5 días entre posted_at (2026-04-28) y date_pulled (2026-05-03) — aún no estabilizó métricas; caption null"
+    "note": "caption null; scripts disponibles en ventana ±2 días (2026-04-26 a 2026-04-30) pero sin caption no hay matching posible; posteado manualmente; previamente excluido por <7 días — ahora tiene 12 días (pulled 2026-05-10)"
   }
 }
