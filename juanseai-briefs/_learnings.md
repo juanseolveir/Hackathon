@@ -2,29 +2,34 @@
 
 > Mantenido por el trigger `juanseai-performance-analyst`. Leído por `juanseai-reels-scripts` cada día.
 
-**Última actualización:** 2026-05-10 · Semana 2026-19 · Muestra: 11 posts analizables (9 con métricas completas, 2 sin insights)
+**Última actualización:** 2026-05-17 · Semana 2026-20 · Muestra: 7 posts analizables
 
 ---
 
 ## Patrones ganadores (doblar apuesta esta semana)
 
-- **Retención alta (avg_watch ≥ 15s): señal temprana de alto rendimiento.** Los 2 posts con mayor watch time (17.2s y 16.4s) son el #2 y #3 del ranking. No sabemos el pilar/fórmula porque son contenido pre-scripts, pero el patrón es claro: si el espectador no skipea antes de los 15s, el score compuesto sube considerablemente. Hook que no revela el payoff antes de los 10s parece ser el driver.
-- **Viralidad por share (n=1, señal muy temprana):** El post #1 tiene 18 shares — 78% de todos los shares del dataset. Eso solo disparó un score de 9.1 (el resto del top está entre 1.3 y 1.7). No podemos identificar la fórmula exacta, pero los contenidos que generan el impulso "mandáselo a alguien" son los de mayor impacto relativo. Priorizar Driver: Controversia o Utilidad urgente.
+- **Retención sostenida (avg_watch >10s):** los 2 posts con mayor tiempo de visualización promedio encabezan el ranking a pesar de no tener más views: 17.2s y 16.4s vs 7.6-8.9s del resto. El algoritmo premia lo que la gente termina de ver. Señal temprana (n=2, unlinked) — no patrón probado.
+- **Hook con resultado medible + tiempo concreto:** el post con más views del set (247) tiene el único caption disponible del top 3: 'Construimos un agente que llama a los clientes del restaurante, recuerda quiénes son y agenda reservas. En 6hs.' — deliverable específico + tiempo acotado. Mayor distribución del algo.
 
 ## Patrones perdedores (evitar)
 
-- **avg_watch < 9s = skip masivo.** Los 3 posts del bottom tienen avg_watch entre 7.6s y 7.9s. Sin excepción. Hooks que resuelven demasiado rápido o que no generan tensión en los primeros 3s parecen ser la causa.
-- **Contenido sin caption o sin contexto visible:** el 91% de los posts analizados son unlinked (10/11). No podemos aprender de pilar/fórmula/driver porque la mayoría fue posteado antes de que empezaran los scripts. El solo hecho de tener caption y pilar definido es un paso hacia la medición real.
+- **avg_watch <8s + 0 shares:** los 2 posts en el fondo del ranking tienen avg_watch entre 7.6s y 7.7s y cero shares. Si el video no retiene al espectador después del gancho inicial y no genera ninguna acción de compartir, el score compuesto colapsa. Skip_rate >64% en ambos casos confirma pérdida temprana.
 
 ## Experimento a correr esta semana
 
-**Hipótesis:** Los reels con hook que no revela el payoff en los primeros 3s (formato "algo pasó pero no te digo qué todavía") van a superar el avg_watch de 12s, que es el umbral que separa el top del bottom en el dataset actual.
+**Hipótesis:** Saves = 0 en todos los 7 posts analizados. Ningún contenido generó guardados todavía. Un Tutorial con CTA explícito de guardar ('Guardalo para usarlo de referencia cuando tengas que elegir') va a romper ese cero porque da al espectador una razón concreta para guardar antes de que el video termine.
 
-**Cómo testearlo:** Al menos 2 de los 3 scripts diarios esta semana deben usar un hook que genere tensión sin resolverla antes de los 3s. Registrar avg_watch en el próximo weekly y comparar contra la media actual de 11.1s. El único post con pilar asignado (Demo × Contrarian, posteado 2026-04-26) tiene 17 likes y 1 comment pero aún sin datos de views/watch por insights=off — validar esa combinación cuando tengamos datos.
+**Cómo testearlo:** 1 de los 3 scripts diarios durante 5 días, con pilar Tutorial y CTA de guardar en el último beat. Revisar saves en el próximo weekly (2026-21).
 
 ## Instrucciones para el generator
 
-- De los 3 scripts del día: 1 en formato Demo × Contrarian (único combo con match comprobado hasta ahora), 1 con driver de Controversia o Utilidad urgente (hipótesis share-viral), 1 libre (distinto pilar Y fórmula).
-- Evitar hooks que resuelven en los primeros 3s — el avg_watch bajo mata el score más que cualquier otra variable.
+- De los 3 scripts del día: 1 orientado a retención (argumento con desarrollo completo, avg_watch objetivo >12s), 1 experimento Tutorial + CTA guardar, 1 libre (distinto pilar Y fórmula a los otros dos).
+- Evitar: contenido que resuelve el gancho en los primeros 5s sin desarrollo posterior. Si el espectador ya sabe el final antes de la mitad, cierra.
+- Priorizar en el hook: resultado concreto + tiempo acotado. Ej: 'En X minutos te muestro...', 'Construimos X en 6hs', 'En 3 pasos logramos Y'.
 - Seguir reglas base: voseo, 3s hook check, zero AI-ese, zero listicles.
-- **Nota de datos:** El collector tiene insights=off desde al menos 2026-04-27. Sin views/shares/saves/avg_watch reales, el ranking de esta semana usa métricas del snapshot 2026-04-24. Cuando insights vuelva a estar activo, el análisis va a ser considerablemente más preciso.
+
+---
+
+### Distribución de pilares (referencia base)
+
+Todos los posts analizables fueron publicados entre 2026-04-06 y 2026-04-17, antes del inicio del programa de scripts (2026-04-24). Sin posts linked al programa: no hay breakdown por pilar / fórmula / driver. Se actualizará cuando el collector tenga insights activos y los posts nuevos tengan ≥7 días de vida.
