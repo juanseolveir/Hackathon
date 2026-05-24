@@ -2,34 +2,31 @@
 
 > Mantenido por el trigger `juanseai-performance-analyst`. Leído por `juanseai-reels-scripts` cada día.
 
-**Última actualización:** 2026-05-17 · Semana 2026-20 · Muestra: 7 posts analizables
+**Última actualización:** 2026-05-24 · Semana 2026-21 · Muestra: 12 posts analizables (1 linked a scripts)
 
 ---
 
 ## Patrones ganadores (doblar apuesta esta semana)
 
-- **Retención sostenida (avg_watch >10s):** los 2 posts con mayor tiempo de visualización promedio encabezan el ranking a pesar de no tener más views: 17.2s y 16.4s vs 7.6-8.9s del resto. El algoritmo premia lo que la gente termina de ver. Señal temprana (n=2, unlinked) — no patrón probado.
-- **Hook con resultado medible + tiempo concreto:** el post con más views del set (247) tiene el único caption disponible del top 3: 'Construimos un agente que llama a los clientes del restaurante, recuerda quiénes son y agenda reservas. En 6hs.' — deliverable específico + tiempo acotado. Mayor distribución del algo.
+- **Retención alta (avg_watch ≥12s):** los 3 posts con score más alto tienen avg_watch de 12.4s, 16.4s y 17.2s respectivamente. La retención separa ganadores de perdedores más que los views (rango views: 183-282, apenas 54% de variación; avg_watch: 7.6s-17.2s, 126% de variación).
+- **Shares como señal de ruptura:** el post #1 tiene 18 shares — 9x el segundo más compartido. Sin data del pilar/fórmula exacto (post sin caption), pero el sharing masivo es la señal de mayor peso en el scoring compuesto (factor 2.5x). Contenido que se reenvía debe tener utilidad inmediata para terceros o un ángulo sorpresivo.
+- Señal temprana — muestra n=9 posts con métricas completas, todos pre-scripts.
 
 ## Patrones perdedores (evitar)
 
-- **avg_watch <8s + 0 shares:** los 2 posts en el fondo del ranking tienen avg_watch entre 7.6s y 7.7s y cero shares. Si el video no retiene al espectador después del gancho inicial y no genera ninguna acción de compartir, el score compuesto colapsa. Skip_rate >64% en ambos casos confirma pérdida temprana.
+- **avg_watch <8s + skip_rate >64%:** los 3 posts del bottom tienen ese rango. El gancho no pasa los primeros 3s. Sin captions disponibles no podemos confirmar los ángulos específicos, pero la consistencia del patrón es llamativa.
+- **0 shares + 0 saves:** combinación que deprime el score a mínimo. Con savings todavía en 0 en todo el dataset, el sharing es la única acción de distribución disponible.
 
 ## Experimento a correr esta semana
 
-**Hipótesis:** Saves = 0 en todos los 7 posts analizados. Ningún contenido generó guardados todavía. Un Tutorial con CTA explícito de guardar ('Guardalo para usarlo de referencia cuando tengas que elegir') va a romper ese cero porque da al espectador una razón concreta para guardar antes de que el video termine.
+**Hipótesis:** El contenido que hace al espectador pensar "tengo que mandárselo a alguien" (share pull) outperformará en score compuesto. La semana pasada se propuso un CTA explícito de guardar — los saves siguen en 0. Esta semana: probar share pull con una pieza de advertencia o dato sorpresivo donde el CTA sea "mandáselo a alguien que [situación específica]".
 
-**Cómo testearlo:** 1 de los 3 scripts diarios durante 5 días, con pilar Tutorial y CTA de guardar en el último beat. Revisar saves en el próximo weekly (2026-21).
+**Cómo testearlo:** 2 de los 5 scripts diarios con cierre "mandáselo a [persona específica] si [condición]", pilar Advertencia o Opinión. Revisar shares en weekly 2026-22.
 
 ## Instrucciones para el generator
 
-- De los 3 scripts del día: 1 orientado a retención (argumento con desarrollo completo, avg_watch objetivo >12s), 1 experimento Tutorial + CTA guardar, 1 libre (distinto pilar Y fórmula a los otros dos).
-- Evitar: contenido que resuelve el gancho en los primeros 5s sin desarrollo posterior. Si el espectador ya sabe el final antes de la mitad, cierra.
-- Priorizar en el hook: resultado concreto + tiempo acotado. Ej: 'En X minutos te muestro...', 'Construimos X en 6hs', 'En 3 pasos logramos Y'.
+- De los 3 scripts del día: 1 con foco en retención alta (desarrollar el argumento completo, payoff que valga esperar ≥12s), 1 con share pull explícito en el CTA, 1 libre (distinto pilar Y fórmula).
+- Evitar hooks que no revelen valor en los primeros 3s sin razón narrativa — skip_rate >64% es el patrón perdedor más claro.
 - Seguir reglas base: voseo, 3s hook check, zero AI-ese, zero listicles.
-
----
-
-### Distribución de pilares (referencia base)
-
-Todos los posts analizables fueron publicados entre 2026-04-06 y 2026-04-17, antes del inicio del programa de scripts (2026-04-24). Sin posts linked al programa: no hay breakdown por pilar / fórmula / driver. Se actualizará cuando el collector tenga insights activos y los posts nuevos tengan ≥7 días de vida.
+- Saves siguen en 0 en todo el dataset: agregar CTA de guardar cuando el contenido sea de referencia (tutoriales, comparativas, guías).
+- Único post linked a script: 2026-04-26, Demo × Contrarian (Project Deal) — sin métricas de views disponibles aún, no scoreado.

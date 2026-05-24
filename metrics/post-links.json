@@ -5,7 +5,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.444
   },
   "18089812586591870": {
     "script_date": null,
@@ -13,7 +13,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "17938908726034498": {
     "script_date": null,
@@ -21,7 +21,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "17965477236060472": {
     "script_date": null,
@@ -29,7 +29,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "17985190505808369": {
     "script_date": null,
@@ -37,7 +37,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "17883110853531878": {
     "script_date": null,
@@ -45,7 +45,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "18073708526233074": {
     "script_date": null,
@@ -53,7 +53,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "17942410146183728": {
     "script_date": null,
@@ -61,7 +61,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "18101444344752831": {
     "script_date": null,
@@ -69,15 +69,15 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "18079875242564156": {
     "script_date": "2026-04-25",
-    "guion_n": 4,
+    "guion_n": 1,
     "pilar": "Demo",
     "formula": "Contrarian",
     "driver": "Identidad + Awe",
-    "caption_similarity": 0.939
+    "caption_similarity": 0.962
   },
   "18069816377667327": {
     "script_date": null,
@@ -85,7 +85,7 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   },
   "18005244968857925": {
     "script_date": null,
@@ -93,6 +93,6 @@
     "pilar": "unlinked",
     "formula": "unlinked",
     "driver": "unlinked",
-    "caption_similarity": null
+    "caption_similarity": 0.0
   }
 }
