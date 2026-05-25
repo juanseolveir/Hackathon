@@ -7,3 +7,7 @@ Formato: `- YYYY-MM-DD · {pilar} · {tema en 1 línea} · {archivo}`
 ---
 
 <!-- entries below -->
+
+- 2026-05-25 · Opinión · OpenAI presenta filing de IPO y pierde 1,22 USD por dólar facturado · 2026-05-25-scripts.md
+- 2026-05-25 · Advertencia · Agentes de IA conectados a tus herramientas y prompt injection → ejecución de comandos (research Microsoft) · 2026-05-25-scripts.md
+- 2026-05-25 · Demo · Gemini 3.5 Flash GA: 4x más rápido, ya en la app y búsquedas para +900M · 2026-05-25-scripts.md
